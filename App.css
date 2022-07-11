@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/* @import url('http://fonts.cdnfonts.com/css/led-digital-7'); */
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Share Tech Mono', monospace;
+
+}
+
+.calculator {
+  /* height: 445px; */
+  max-width: 460px;
+  border-radius: 4px;
+  background-color: #000;
+}
+
+.output {
+  height: 80px;
+}
+
+.keys {
+  gap: 2px;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+button {
+  font-family: 'Share Tech Mono', monospace;
+  color: #fff;
+  background: rgb(102, 102, 102);
+}
+
+.keys button:first-child {
+  color: #ffffff;
+  grid-column-end: 3;
+  grid-column-start: 1;
+  background: rgb(172, 57, 57);
+}
+
+.keys button:nth-child(15) {
+  color: #ffffff;
+  grid-row: 4 / 6;
+  grid-column: 4 / 4;
+  background: rgb(0, 68, 102);
+}
+
+.keys button:nth-child(16) {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.input,
+.result {
+  color: #fff;
+  height: 40px;
+  display: block;
+  font-size: 29px;
+  text-align: right;
+  padding-right: 10px;
+}
+
+button {
+  border: none;
+  font-size: 20px;
+  min-width: 80px;
+  min-height: 65px;
+  /* border-radius: 4px; */
+}
+button:hover {
+    color: black;
+    outline: 0.05em solid grey;
+    z-index: 3;
+}
